@@ -1,0 +1,108 @@
+
+
+@media screen and (max-width:767px){
+
+header{
+}
+
+.header_top{
+	background:#FFFFFF;
+	overflow: hidden;
+	padding:1%;
+}
+
+.header_top a{
+	color:#29524b;
+	text-decoration: none;
+	font-weight: 500;
+	font-size:95%;
+}
+
+h1{
+	margin:0;
+	float:left;
+	padding-left:9%;
+	background:url(../../images/logo03.svg) no-repeat;
+	background-size:25%;
+}
+
+h1 img{
+	width:25%;
+	margin-bottom:-10px;
+	vertical-align:bottom;
+}
+
+.menu_pc{
+	display:none;
+}
+
+main{
+	height:720px;
+	overflow: hidden;
+}
+
+.content01{
+	position:relative;
+	padding-bottom:120%;
+	height: 100%;
+}
+
+.content01_inner_bg{
+	background:rgba(255, 255, 255, 0.8);
+	padding:0 5% 2%;
+	position:absolute;
+	top:0;
+	right:0;
+	width:0;
+	height: 100%;
+}
+
+.pc {
+	display:none;
+}
+
+
+/**************** shop_info *****************/
+
+#shop_info{
+	opacity:0;
+	padding:10% 0;
+	margin:0 auto;
+}
+
+#shop_info h2{
+	font-size:200%;
+	color:#215537;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+
+
+#shop_info_inner{
+	
+}
+
+#shop_info_text{
+	width:100%;
+}
+
+#shop_info_text p{
+	font-size:100%;
+	color:#215537;
+	font-weight:500;
+	line-height: 2;
+	margin:2em 0;
+}
+
+#shop_info_image{
+	width: 100%;
+    margin-top: 1em;
+}
+
+#shop_info_image img{
+	width:100%;
+}
+
+/**************** shop_info end *****************/
+
+}

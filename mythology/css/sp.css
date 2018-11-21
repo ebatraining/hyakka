@@ -1,0 +1,276 @@
+
+@media screen and (max-width:767px){
+
+header{
+
+}
+
+
+.header_top{
+	background:#FFFFFF;
+	overflow: hidden;
+	padding:1%;
+}
+
+.header_top a{
+	color:#29524b;
+	text-decoration: none;
+	font-weight: 500;
+	font-size:95%;
+}
+
+h1{
+	margin:0;
+	float:left;
+	padding-left:9%;
+	background:url(../../images/logo03.svg) no-repeat;
+	background-size:25%;
+}
+
+h1 img{
+	width:25%;
+	margin-bottom:-10px;
+	vertical-align:bottom;
+}
+
+.menu_pc{
+	display:none;
+}
+
+main{
+	height: auto;
+	overflow: hidden;
+}
+
+.content01{
+	position:relative;
+	padding-bottom:120%;
+}
+
+.content01_inner_bg{
+	background:rgba(255, 255, 255, 0.8);
+	padding:0 5% 2%;
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height: 100%;
+}
+
+.pc {
+	display:none;
+}
+
+/**************** message *****************/
+
+#message{
+	opacity:0;
+	padding:15% 1% 0%;
+}
+
+#message h2{
+	font-size:200%;
+	color:#215537;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+
+#message p{
+	font-size:95%;
+	color:#215537;
+	font-weight:500;
+	line-height: 2;
+	margin:2em 0;
+}
+
+/**************** message　end *****************/
+.fade-in{
+  transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+}
+
+#m-icons-sp ul{
+	width: 100%;
+	margin-top: 5%;
+	float: right;
+	padding: 0;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap:wrap;
+	text-align: center;
+}
+
+#m-icons-sp li{
+	width: 25%;
+	list-style: none;
+}
+
+#m-icons-sp img{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#m-icons-sp p{
+margin: 0;
+}
+
+#m-icons-sp a{
+text-decoration: none;
+}
+
+#m-icons-sp img:hover{
+	text-decoration: underline;
+}
+
+
+.content2{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-1.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content3{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content4{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content5{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-4.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content6{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-5.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content7{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-6.jpg) no-repeat;
+	background-size: cover;
+}
+
+.content8{
+	width: 100%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	background: url(../images/m-7.jpg) no-repeat;
+	background-size: cover;
+}
+
+.iris-iris,
+.violet-violet,
+.pansy-pansy{
+	width: 100%;
+	padding-top: 5%;
+	float: right;
+	color: #FFFFFF;
+}
+
+.narcissus-narcissus{
+	width: 100%;
+	padding-top: 5%;
+	float: right;
+	color: #FFFFFF;
+}
+
+.lily-lily,
+.hyacinth-hyacinth,
+.column-column{
+	width: 100%;
+	padding-top: 5%;
+	float: left;
+	color: #FFFFFF;
+}
+
+.iris-iris h3,
+.lily-lily h3,
+.narcissus-narcissus h3,
+.hyacinth-hyacinth h3,
+.column-column h3{
+	width: 50%;
+	color: #FFFFFF;
+	font-size: 6em;
+	font-weight: 400
+	/*font-family: 'Playfair Display', serif;*/
+}
+
+.m-inner-title,
+.m-inner-title3{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.m-inner-title h4{
+	display: inline-block;
+  width: 40%;
+  font-size: 2em;
+	font-weight: 400;
+	/*font-family:"Times New Roman", "游明朝", "YuMincho","ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro", "HGS明朝E","メイリオ", "ＭＳ Ｐ明朝","MS PMincho","Meiryo", serif;*/
+}
+
+.m-inner-title2 h4{
+	margin: 0;
+	display: inline-block;
+	width: 90%;
+	text-align: right;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.m-inner-title3 h4{
+	display: inline-block;
+  width: 40%;
+	text-align: right;
+  font-size: 2em;
+	font-weight: 400;
+}
+
+.m-inner-title3 h3{
+	width: 60%;
+	color: #FFFFFF;
+	font-size: 6em;
+	font-weight: 400
+}
+
+.m-inner-title p,
+.m-inner-title2 p,
+.m-inner-title3 p{
+	font-weight: 400;
+	display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.m-inner-text{
+line-height: 2;
+margin: 5%;
+}
+
+}

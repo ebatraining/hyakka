@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<title>フラワーショップ百花</title>
+<meta charset="utf-8">
+<meta name="keywords" content="flower,shop">
+<meta name="description" content="生花をいろんな方に楽しんで頂くために、最大限お安くご提供致します。お客様急増中！！！喜びのお声をたくさん戴いております。お花の事は、フラワーショップ百花へ！きっとご満足頂けるはずです。記念日に、プレゼントに、ご自分へのご褒美に。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" href="./css/drawer.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/drawer.min.js"></script>
+<script src="./js/iscroll.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.drawer').drawer();
+});
+</script>
+<script src="./js/jquery.inview.min.js"></script>
+<script src="./js/animation.js"></script>
+<!--script>
+	$(document).ready(function() {
+
+    // ページurlを"/"で区切った時の文字列を取得
+    var url = location.pathname.split("/")[3];
+    var navList = $("#gnav a");
+
+    // 各aタグに対して設定
+    navList.each(function(){
+        // aタグに設定したurlで"/"で区切った３番目の文字列を取得
+        var href = $(this).attr("href").split("/")[3];
+
+        // 変数hrefと変数urlの中身が一致していれば、aタグにクラスactiveをつける
+        if( href == url ) {
+            $(this).addClass("current");
+        };
+    });
+	});
+</script-->
+<script>
+$(document).ready(function() {
+
+    // ナビゲーションのリンクを指定
+   var navLink = $('#gnav li a');
+ 
+    // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
+   var contentsArr = new Array();
+  for (var i = 0; i < navLink.length; i++) {
+       // コンテンツのIDを取得
+      var targetContents = navLink.eq(i).attr('href');
+      // ページ内リンクでないナビゲーションが含まれている場合は除外する
+      if(targetContents.charAt(0) == '#') {
+         // ページ上部からコンテンツの開始位置までの距離を取得
+            var targetContentsTop = $(targetContents).offset().top;
+         // ページ上部からコンテンツの終了位置までの距離を取得
+            var targetContentsBottom = targetContentsTop + $(targetContents).outerHeight(true) - 1;
+         // 配列に格納
+            contentsArr[i] = [targetContentsTop, targetContentsBottom]
+      }
+   };
+ 
+  // 現在地をチェックする
+   function currentCheck() {
+       // 現在のスクロール位置を取得
+        var windowScrolltop = $(window).scrollTop();
+        for (var i = 0; i < contentsArr.length; i++) {
+           // 現在のスクロール位置が、配列に格納した開始位置と終了位置の間にあるものを調べる
+          if(contentsArr[i][0] <= windowScrolltop && contentsArr[i][1] >= windowScrolltop) {
+                // 開始位置と終了位置の間にある場合、ナビゲーションにclass="current"をつける
+               navLink.removeClass('current');
+               navLink.eq(i).addClass('current');
+                i == contentsArr.length;
+            }
+       };
+  }
+ 
+   // ページ読み込み時とスクロール時に、現在地をチェックする
+  $(window).on('load scroll', function() {
+      currentCheck();
+ });
+ 
+ // ナビゲーションをクリックした時のスムーズスクロール
+    navLink.click(function() {
+      $('html,body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+       }, 300);
+        return false;
+   })
+});
+</script>
+
+</head>
+
+<body class="drawer drawer--right">
+	<header>
+		<div class="header_top">
+			<h1><a href="./">Hyakka</a></h1>
+			<div class="menu_sp">
+				<button type="button" class="drawer-toggle drawer-hamburger">
+					<span class="sr-only">toggle navigation</span>
+					<span class="drawer-hamburger-icon"></span>
+				</button>
+				<nav class="drawer-nav">
+					<ul class="drawer-menu">
+					<li><a href="./">HOME</a></li>
+					<li><a href="./message/">MESSAGE</a></li>
+					<li><a href="./shop/">SHOP</a></li>
+					<li><a href="./fa/">FLOWER ARRANGE</a></li>
+					<li><a href="./mythology/">MYTHOLOGY</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu_pc">
+				<nav>
+					<div id="gnav">
+						<ul>
+							<li><a href="./index.html" class="current">HOME</a></li>
+							<li><a href="./message/index.html">MESSAGE</a></li>
+							<li><a href="./shop/index.html">SHOP</a></li>
+							<li><a href="./fa/index.html" >FLOWER ARRANGE</a></li>
+							<li><a href="./mythology/index.html">MYTHOLOGY</a></li>
+						</ul>
+					</div>
+				</nav>
+	        </div>
+		</div>
+		<div class="logo">
+			<img src="images/logo04.svg" alt="百花">
+		</div>
+	</header>
+	<main>
+		<div class="content01">
+			<div class="content01_inner_bg">
+			</div>
+			<div id="top_text">
+				<h2>当店のこと</h2>
+				<p>フラワーショップ百花は、多くの方に花と緑に囲まれた心ゆたかな生活をお楽しみいただけるよう安くて新鮮な生花を多くの方にご提供し、花の魅力に親しんで頂きたくてオープンしました。 花束やアレンジメントは勿論、スタンド花、会場花、お供え花、ブライダルなど、様々な場面に対応可能です。旬のお花を取り揃えてみなさまのお越しをお待ちしております。お気軽にお立ち寄りください。</p>
+			</div>
+			<div id="news">
+				<h2>お知らせ</h2>
+				<div id="trigger01"></div>
+				<dl>
+					<dt>フラワーアレンジメントコーナー完成！</dt>
+					<dd>お届けした花を確認できなかったお客様のためのページができました。</dd>
+				</dl>
+				<dl>
+					<dt>3000円以上のお花で10％OFF!</dt>
+					<dd>現在、3000円以上のお買い物をされるお客様を対象に割引キャンペーンを実施中です。</dd>
+				</dl>
+				<dl>
+					<dt>全国配送可能</dt>
+					<dd>お電話でご注文を受け付けております。</dd>
+				</dl>
+			</div>
+			<div id="trigger02"></div>
+			<div class="content02_inner_bg">
+			</div>
+			<section id="page_contents">
+				<div class="page_contents_inner">
+					<a href="./message/">
+						<img src="./images/about.jpg" alt="about">
+					</a>
+					<h3><a href="./message/">MESSAGE</a></h3>
+					<p>多くの方に花と緑に囲まれた心ゆたかな生活をお楽しみいただきたい想いを込めたページです。</p>
+				</div>
+				<div class="page_contents_inner">
+					<a href="./shop/">
+						<img src="./images/shop.jpg" alt="shop">
+					</a>
+					<h3><a href="./shop/">SHOP</a></h3>
+					<p>当店の営業情報です。</p>
+				</div>
+				<div class="page_contents_inner">
+					<a href="./fa/">
+						<img src="./images/fa.jpg" alt="フラワーアレンジ">
+					</a>
+					<h3><a href="./fa/">FLOWER ARRAGE</a></h3>
+					<p>店頭お渡し出来ず、どのようなお花が送られているのか確認できないお客様へ。アレンジの参考にもどうぞ。</p>
+				</div>
+				<div class="page_contents_inner">
+					<a href="./mythology/">
+						<img src="./images/mythology.jpg" alt="mythology">
+					</a>
+					<h3><a href="./mythology/">MYTHOLOGY</a></h3>
+					<p>四季折々に私たちを楽しませてくれる花たち。そんな花たちの成果各地の伝承や神話に残されたエピソードを紹介します。花選びの参考にどうぞ。</p>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p><small>© Flowershop Hyakka</small></p>
+	</footer>
+</body>
+</html>

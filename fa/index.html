@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<title>フラワーショップ百花 | フラワーアレンジメント</title>
+<meta charset="utf-8">
+<meta name="keywords" content="flower,shop">
+<meta name="description" content="生花をいろんな方に楽しんで頂くために、最大限お安くご提供致します。お客様急増中！！！喜びのお声をたくさん戴いております。お花の事は、フラワーショップ百花へ！きっとご満足頂けるはずです。記念日に、プレゼントに、ご自分へのご褒美に。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" href="../css/drawer.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/drawer.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script>
+$(document).ready(function(){
+  $('.drawer').drawer();
+});
+</script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="./js/animation.js"></script>
+<script>
+	$(document).ready(function() {
+
+    // ページurlを"/"で区切った時の文字列を取得
+    var url = location.pathname.split("/")[3];
+    var navList = $("#gnav a");
+
+    // 各aタグに対して設定
+    navList.each(function(){
+        // aタグに設定したurlで"/"で区切った３番目の文字列を取得
+        var href = $(this).attr("href").split("/")[3];
+
+        // 変数hrefと変数urlの中身が一致していれば、aタグにクラスactiveをつける
+        if( href == url ) {
+            $(this).addClass("current");
+        };
+    });
+	});</script>
+
+</head>
+
+<body class="drawer drawer--right">
+	<header>
+		<div class="header_top">
+			<h1><a href="./">Hyakka</a></h1>
+			<div class="menu_sp">
+				<button type="button" class="drawer-toggle drawer-hamburger">
+					<span class="sr-only">toggle navigation</span>
+					<span class="drawer-hamburger-icon"></span>
+				</button>
+				<nav class="drawer-nav">
+					<ul class="drawer-menu">
+						<li><a href="../">HOME</a></li>
+						<li><a href="../message/">MESSAGE</a></li>
+						<li><a href="../shop/" class="current">SHOP</a></li>
+						<li><a href="./">FLOWER ARRANGE</a></li>
+						<li><a href="../mythology/">MYTHOLOGY</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu_pc">
+			<nav>
+			   <div id="gnav">
+		          <ul>
+					<li><a href="../">HOME</a></li>
+					<li><a href="../message/">MESSAGE</a></li>
+					<li><a href="../shop/">SHOP</a></li>
+					<li><a href="./" class="current" >FLOWER ARRANGE</a></li>
+					<li><a href="../mythology/">MYTHOLOGY</a></li>
+			       </ul>
+				 </div>
+			</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="content01">
+			<div id="trigger01"></div>
+			<div class="content01_inner_bg">
+				<div id="fa">
+					<h2>フラワーアレンジメント</h2>
+					<h3>ギフト</h3>
+					<div class="fa_inner">
+						<div class="fa_image">
+							<div class="fa_image_elm">
+								<img src="images/fa1.jpg" alt="お祝い用">
+							</div>
+							<p>演奏会のお祝いや出産のお祝いに。</p>
+						</div>
+						<div class="fa_image">
+							<div class="fa_image_elm">
+								<img src="images/fa2.jpg" alt="お祝い用">
+							</div>
+							<p>引っ越し祝いやホームパーティーに。</p>
+						</div>
+						<div class="fa_image">
+							<div class="fa_image_elm">
+								<img src="images/fa3.jpg" alt="お祝い用">
+							</div>
+							<p>記念日や日頃の感謝を込めて。</p>
+						</div>
+					</div>
+					<h3>結婚式用テーブル装花・ブーケ</h3>
+					<div class="fa_inner wa">
+						<div class="fa_image">
+							<div class="fa_image_elm">
+								<img src="images/fa4.jpg" alt="お祝い用">
+							</div>
+						</div>
+						<div class="fa_image">
+							<div class="fa_image_elm">
+								<img src="images/fa5.jpg" alt="お祝い用">
+							</div>
+						</div>
+						<div class="fa_image">
+							<div class="fa_image_elm empty"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p><small>© Flowershop Hyakka</small></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+body{
+	margin:0;
+	background:url(../images/message_bg.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+@media screen and (min-width:768px){
+
+
+header{
+	background:url(../images/top.jpg)center center;
+	background-size:cover;
+}
+
+.header_top{
+	background:#FFFFFF;
+	overflow: hidden;
+	padding:1%;
+}
+
+.header_top a{
+	color:#29524b;
+	text-decoration: none;
+	font-weight: 500;
+	font-size:95%;
+}
+
+h1{
+	margin:0;
+	float:left;
+	color:#29524b;
+	letter-spacing: 0.1em;
+	text-align:left;
+	padding-left:5%;
+	background:url(../images/logo03.svg) no-repeat;
+	background-size:25%;
+}
+	
+/*h1 img{
+	width:25%;
+	margin-bottom:-10px;
+	vertical-align:bottom;
+}*/
+.logo{
+	position:absolute;
+	top:160px;left:35%;
+	width:30%;
+	}
+
+
+.menu_pc{
+	float:right;
+}
+nav #gnav{
+    padding: 0px 0;
+	margin: 0 auto;
+}
+ nav #gnav ul{
+	float:left;
+	list-style: none;
+	padding:0;
+ display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+}
+nav #gnav ul li{
+	display: inline-block;
+	padding: 0 20px;
+}
+nav #gnav ul li a{
+	font-size: 14px;
+	color:#333;
+	padding-bottom:2px;
+	text-decoration:none;
+}
+.menu_pc  li{
+	padding-left:2em;
+}
+nav #gnav ul li a.current{
+	color:#EE3538;
+	border-bottom: 2px solid #aaa;
+}
+nav #gnav ul li a:hover{
+	color:#aaa;
+	border-bottom: 2px solid #aaa;
+}
+
+
+.menu_sp{
+	display:none;
+}
+
+main{
+	height: 1000px;
+	overflow: hidden;
+}
+
+.content01{
+	position:relative;
+	height:100%;
+}
+
+.content01_inner_bg{
+	background:rgba(255, 255, 255, 0.8);
+	padding:0 10% 40%;
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:100%;
+}
+
+
+/**************** message *****************/
+
+#message{
+	opacity:0;
+	padding:15% 1% 20%;
+	margin:0 10% 5% auto;
+}
+
+#message h2{
+	font-size:200%;
+	color:#215537;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+
+#message p{
+	font-size:95%;
+	color:#215537;
+	font-weight:500;
+	line-height: 2;
+	margin:2em 0;
+}
+
+/**************** message　end *****************/
+
+
+}

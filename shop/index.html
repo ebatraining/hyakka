@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<title>フラワーショップ百花 | shop</title>
+<meta charset="utf-8">
+<meta name="keywords" content="flower,shop">
+<meta name="description" content="生花をいろんな方に楽しんで頂くために、最大限お安くご提供致します。お客様急増中！！！喜びのお声をたくさん戴いております。お花の事は、フラワーショップ百花へ！きっとご満足頂けるはずです。記念日に、プレゼントに、ご自分へのご褒美に。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sp.css">
+<link rel="stylesheet" href="../css/drawer.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/drawer.min.js"></script>
+<script src="../js/iscroll.js"></script>
+<script>
+$(document).ready(function(){
+  $('.drawer').drawer();
+});
+</script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="./js/animation.js"></script>
+<script>
+	$(document).ready(function() {
+
+    // ページurlを"/"で区切った時の文字列を取得
+    var url = location.pathname.split("/")[3];
+    var navList = $("#gnav a");
+
+    // 各aタグに対して設定
+    navList.each(function(){
+        // aタグに設定したurlで"/"で区切った３番目の文字列を取得
+        var href = $(this).attr("href").split("/")[3];
+
+        // 変数hrefと変数urlの中身が一致していれば、aタグにクラスactiveをつける
+        if( href == url ) {
+            $(this).addClass("current");
+        };
+    });
+	});</script>
+
+</head>
+
+<body class="drawer drawer--right">
+	<header>
+		<div class="header_top">
+			<h1><a href="./">Hyakka</a></h1>
+			<div class="menu_sp">
+				<button type="button" class="drawer-toggle drawer-hamburger">
+					<span class="sr-only">toggle navigation</span>
+					<span class="drawer-hamburger-icon"></span>
+				</button>
+				<nav class="drawer-nav">
+					<ul class="drawer-menu">
+						<li><a href="./">HOME</a></li>
+						<li><a href="../message/">MESSAGE</a></li>
+						<li><a href="./">SHOP</a></li>
+						<li><a href="../fa/">FLOWER ARRANGE</a></li>
+						<li><a href="../mythology/">MYTHOLOGY</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menu_pc">
+			<nav>
+			   <div id="gnav">
+				  <ul>
+					<li><a href="../">HOME</a></li>
+					<li><a href="../message/">MESSAGE</a></li>
+				    <li><a href="./" class="current">SHOP</a></li>
+					<li><a href="../fa/" >FLOWER ARRANGE</a></li>
+					<li><a href="../mythology/">MYTHOLOGY</a></li>
+					</ul>
+				 </div>
+			</nav>
+		   </div>
+		</div>
+	</header>
+	<main>
+		<div class="content01">
+			<div id="trigger01"></div>
+			<div class="content01_inner_bg">
+				<div id="shop_info">
+					<h2>店舗情報</h2>
+					<div id="shop_info_inner">
+						<div id="shop_info_text">
+							<dl>
+								<dt>店名</dt>
+								<dd>フラワーショップ百花</dd>
+							</dl>
+							<dl>
+								<dt>住所</dt>
+								<dd>長崎県長崎市宿町6丁目49-1</dd>
+							</dl>
+							<dl>
+								<dt>TEL</dt>
+								<dd>095-139-4196</dd>
+							</dl>
+							<dl>
+								<dt>FAX</dt>
+								<dd>095-139-4195</dd>
+							</dl>
+							<dl>
+								<dt>代表</dt>
+								<dd>梅崎 みどり</dd>
+							</dl>
+						</div>
+						<div id="shop_info_image">
+							<img src="images/shop.jpg" alt="店舗">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p><small>© Flowershop Hyakka</small></p>
+	</footer>
+</body>
+</html>
