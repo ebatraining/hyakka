@@ -1,21 +1,50 @@
 <!doctype html>
-<html lang="ja">
+<html>
 <head>
-<title>フラワーショップ百花 | mythology</title>
 <meta charset="utf-8">
-<meta name="keywords" content="flower,shop">
-<meta name="description" content="生花をいろんな方に楽しんで頂くために、最大限お安くご提供致します。お客様急増中！！！喜びのお声をたくさん戴いております。お花の事は、フラワーショップ百花へ！きっとご満足頂けるはずです。記念日に、プレゼントに、ご自分へのご褒美に。">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/sp.css">
-<link rel="stylesheet" href="../css/drawer.css">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<title>フラワーショップ百花 | mythology</title>
+<link href="css/sp.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/drawer.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/mythologystyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../js/drawer.min.js"></script>
 <script src="../js/iscroll.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+	<script>
+		//ページスクロール　トップへ戻るボタン
+	$(window).on("scroll", function() {
+	if ($(this).scrollTop() > 100) {
+		$(".pagetop").fadeIn();
+	} else {
+		$(".pagetop").fadeOut();
+	}
+});
+	</script>
 <script>
 $(document).ready(function(){
   $('.drawer').drawer();
@@ -41,270 +70,126 @@ $(document).ready(function(){
         };
     });
 	});</script>
-
-  <!--画像がふわっと現れるやつ-->
-  <script>
-  $(window).on('load',function(){
-
-	// fade-in
-    $(window).scroll(function (){
-        $('.fade-in').each(function(){
-            var POS = $(this).offset().top;  //fade-inがついている要素の位置
-            var scroll = $(window).scrollTop();  //スクロール一
-            var windowHeight = $(window).height();  //ウィンドウの高さ
-
-            if (scroll > POS - windowHeight + windowHeight/5){
-                $(this).css("opacity","1" );
-            } else {
-                $(this).css("opacity","0" );
-            }
-        });
-    });
-});
-</script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="drawer drawer--right">
-	<header>
-		<div class="header_top">
-			<h1><a href="../">Hyakka</a></h1>
-			<div class="menu_sp">
-				<button type="button" class="drawer-toggle drawer-hamburger">
-					<span class="sr-only">toggle navigation</span>
-					<span class="drawer-hamburger-icon"></span>
-				</button>
-				<nav class="drawer-nav">
-					<ul class="drawer-menu">
-						<li><a href="../">HOME</a></li>
-						<li><a href="../message/">MESSAGE</a></li>
-						<li><a href="../shop/">SHOP</a></li>
-						<li><a href="../fa/">FLOWER ARRANGE</a></li>
-						<li><a href="./">MYTHOLOGY</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="menu_pc">
-			<nav>
-			  <div id="gnav">
-			   <ul>
-				    <li><a href="../">HOME</a></li>
-					<li><a href="../message/">MESSAGE</a></li>
-					<li><a href="../shop/">SHOP</a></li>
-					<li><a href="../fa/" >FLOWER ARRANGE</a></li>
-					<li><a href="./" class="current">MYTHOLOGY</a></li>
-				</ul>
-			   </div>
-			</nav>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="content01">
-			<div id="trigger01"></div>
-			<div class="content01_inner_bg">
-				<div id="message">
-        <div class="m-l">
-					<h2>mythology</h2>
-					<p>四季折々に私たちを楽しませてくれる花たち。そんな何気なく接している花たちにまつわる世界各地の伝承や神話に残されたエピソードを紹介いたします。これを知ると花に対する見方が少し変わるかもしれません。
-          <br>参考文献「花の神話」秦寛博 編著
-          </p>
-        </div>
-          <div class="pc"><!--PC用の画面-->
-          <div id="m-icons">
-            <ul>
-              <li>
-                <a href="#iris">
-                  <img src="./images/m-icon1.png">
-                  <p>アイリス</p>
-                </a>
-              </li>
-              <li>
-                <a href="#lily">
-                  <img src="./images/m-icon2.png">
-                  <p>百合</p>
-                </a>
-              </li>
-              <li>
-                <a href="#narcissus">
-                  <img src="./images/m-icon3.png">
-                  <p>水仙</p>
-                </a>
-              </li>
-              <li>
-                <a href="#hyacinth">
-                  <img src="./images/m-icon4.png">
-                  <p>ヒヤシンス</p>
-                </a>
-              </li>
-              <li>
-                <a href="#violet">
-                  <img src="./images/m-icon5.png">
-                  <p>すみれ</p>
-                </a>
-              </li>
-              <li>
-                <a href="#column">
-                  <img src="./images/m-icon6.png">
-                  <p><span class="font">蘭</span></p>
-                </a>
-              </li>
-              <li>
-                <a href="#pansy">
-                  <img src="./images/m-icon7.png">
-                  <p><span class="font">パンジー</span></p>
-                </a>
-              </li>
+<div id="all">
+  <header>
+    <div class="header_top">
+      <h1><a href="../">Hyakka</a></h1>
+      <div class="menu_sp">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav">
+          <ul class="drawer-menu">
+            <li><a href="../">HOME</a></li>
+            <li><a href="../message/">MESSAGE</a></li>
+            <li><a href="../shop/">SHOP</a></li>
+            <li><a href="../fa/">FLOWER ARRANGE</a></li>
+            <li><a href="./">MYTHOLOGY</a></li>
             </ul>
-          </div>
-          </div>
-          <div class="sp"><!--スマホ用の画面-->
-            <div id="m-icons-sp">
-              <ul>
-                <li>
-                  <a href="#iris">
-                    <img src="./images/m-icon1.png">
-                    <p>アイリス</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#lily">
-                    <img src="./images/m-icon2.png">
-                    <p>百合</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#narcissus">
-                    <img src="./images/m-icon3.png">
-                    <p>水仙</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#hyacinth">
-                    <img src="./images/m-icon4.png">
-                    <p>ヒヤシンス</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#violet">
-                    <img src="./images/m-icon5.png">
-                    <p>すみれ</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#column">
-                    <img src="./images/m-icon6.png">
-                    <p><span class="font">蘭</span></p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#pansy">
-                    <img src="./images/m-icon7.png">
-                    <p><span class="font">パンジー</span></p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-				</div>
-			</div>
-		</div>
-    <div class="fade-in">
-      <div class="content2" id="iris">
-        <div class="iris-iris">
-          <div class="m-inner-title">
-            <h3>Iris</h3><h4>―アイリス―</h4>
-            <p>花言葉：優しい心</p>
-          </div>
-          <div class="m-inner-text">
-            <p>ギリシャ神話の神々の女王へラ（Hera）に仕える乙女の中に、イリスという美しい娘がいました。気立てのいい娘でしたから、へラはとても可愛がっていました。 ある時へラの夫ゼウス（Zeus）がその可憐さに目を止めて、イリスに迫りました。敬愛する主人の伴侶との浮気などできないと、イリスは断りましたが、ゼウスは聞く耳を持ちません。 「私をどこか遠くへ行かせて下さい」イリスはへラに、理由をありのままに話して、懇願しました。その心がけに感動したへラは、七色に輝く首飾りと、大空を渡るための翼を授け、神酒を振りかけて、虹の女神にしたのです。 この時こぼれた神酒が地上に降り注ぐと、そこから美しい花が咲いたのです。虹の女神と共に生まれた花ですから、女神と同じくイリスと呼ばれました。</p>
-          </div>
+          </nav>
+        </div>
+      <div class="menu_pc">
+        <nav>
+          <div id="gnav">
+            <ul>
+              <li><a href="../">HOME</a></li>
+              <li><a href="../message/">MESSAGE</a></li>
+              <li><a href="../shop/">SHOP</a></li>
+              <li><a href="../fa/" >FLOWER ARRANGE</a></li>
+              <li><a href="./" class="current">MYTHOLOGY</a></li>
+            </ul>
+           </div>
+        </nav>
+        </div>
+      </div>
+    </header>
+  <div id="top">
+    <img src="images/top1.jpg" width="1200" height="400" alt="トップ画像"/>
+  </div>
+  <div class="line"><img src="images/mythology.png" width="259" height="45" alt=""/></div>
+<main>
+    <div class="lof">
+      <p class="language"><img src="images/Language.png" width="513" height="60" alt="ランゲージオブフラワーズ"/></p>
+      <p class="text">四季折々に私たちを楽しませてくれる花たち。<br>
+        そんな何気なく接している花たちにまつわる世界各地の伝承や<br>
+        神話に残されたエピソードを紹介いたします。<br>
+      参考文献「花の神話」秦寛博 編著</p>
+    </div>
+    <div class="pglink"><a href="#iris" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image01','','images/iris.png',1)"><img src="images/pg_iris.png" alt="アイリスへリンク" width="240" height="240" id="Image01"></a><a href="#lily" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image02','','images/lily.png',1)"><img src="images/pg_lily.png" alt="百合へリンク" width="240" height="240" id="Image02"></a><a href="#narcissus" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image03','','images/narcissus.png',1)"><img src="images/pg_narcissus.png" alt="水仙へリンク" width="240" height="240" id="Image03"></a><a href="#hyacinth" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image04','','images/hyacinth.png',1)"><img src="images/pg_hyacinth.png" alt="ヒヤシンスへリンク" width="240" height="240" id="Image04"></a><a href="#column" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image05','','images/violet.png',1)"><img src="images/pg_violet.png" alt="すみれへリンク" width="240" height="240" id="Image05"></a><a href="#column" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image06','','images/column.png',1)"><img src="images/pg_column.png" alt="蘭へリンク" width="240" height="240" id="Image06"></a><a href="#pansy" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image07','','images/pansy.png',1)"><img src="images/pg_pansy.png" alt="パンジーへリンク" width="240" height="240" id="Image07"></a><img src="images/pglink.png" width="240" height="240" alt=""/></div>
+    <div id="iris">
+      <div class="inner"><img src="images/img02.jpg" width="480" height="320" alt="アイリス"/>
+        <div class="text">
+          <h2>花言葉：優しい心</h2>
+          <p>ギリシャ神話の神々の女王へラ（Hera）に仕える乙女の中に、イリスという
+            美しい娘がいました。気立てのいい娘でしたから、へラはとても可愛がって
+            いました。ある時へラの夫ゼウス（Zeus）がその可憐さに目を止めて、イリ
+            スに迫りました。敬愛する主人の伴侶との浮気などできないと、イリスは断
+            りましたが、ゼウスは聞く耳を持ちません。「私をどこか遠くへ行かせて下
+            さい」イリスはへラに、理由をありのままに話して、懇願しました。
+            その心がけに感動したへラは、七色に輝く首飾りと、大空を渡るための翼を
+            授け、神酒を振りかけて、虹の女神にしたのです。この時こぼれた神酒が地上に降り注ぐと、そこから美しい花が咲いたのです。
+          虹の女神と共に生まれた花ですから、女神と同じくイリスと呼ばれました。</p>
+        </div>
+      </div>
+    </div>	
+    <div id="lily">
+      <div class="inner"><img src="images/img03.jpg" width="480" height="320" alt="百合"/>
+        <div class="text">
+          <h2>花言葉：威厳、純愛、無垢</h2>
+          <p>ある時、主神ゼウスは王女アルクメーネの美しさに惹かれて、彼女との間に子供を設けました。 ゼウスの妻へラが夫の浮気相手やその子供を許さない事を知っていたアルクメーネは、女神の怒りを恐れて城壁の外の原野に、生まれたばかりの子供を捨てました。 これを知ったゼウスは、娘である知恵と戦の女神アテナ（Athena）をそそのかし、この原野にへラを連れて行かせます。へラの母乳を飲んだ者は不死の身体を手に入れられるからです。 アテナはゼウスに言われた通り、捨てられていた赤ん坊を拾い、この子にお乳を飲ませてくれるよう、へラに頼みます。 へラも捨てられた子供を見捨てることができず、ゼウスの息子だと気づかないまま、赤ん坊に乳を含ませます。この時口からこぼれた母乳が飛び散り、天に飛んだものが天の川となり、地にこぼれたものが白百合になったのです。 不死身の身体を手に入れ、ヘラクレス（ヘラの栄光）と呼ばれるようになりました。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content3" id="lily">
-        <div class="lily-lily">
-          <div class="m-inner-title">
-            <h3>Lily</h3><h4>―百合―</h4>
-            <p>花言葉：威厳、純愛、無垢</p>
-          </div>
-          <div class="m-inner-text">
-            <p>ある時、主神ゼウスはミュケナーイの王女アルクメーネの美しさに惹かれて、彼女との間に子供を設けました。 ゼウスの妻へラが夫の浮気相手やその子供を許さない事を知っていたアルクメーネは、女神の怒りを恐れて城壁の外の原野に、生まれたばかりの子供を捨てました。 これを知ったゼウスは、娘である知恵と戦の女神アテナ（Athena）をそそのかし、この原野にへラを連れて行かせます。へラの母乳を飲んだ者は不死の身体を手に入れられるからです。 アテナはゼウスに言われた通り、捨てられていた赤ん坊を拾い、この子にお乳を飲ませてくれるよう、へラに頼みます。 へラも捨てられた子供を見捨てることができず、ゼウスの息子だと気づかないまま、赤ん坊に乳を含ませます。すると、赤ん坊が恐るべき力で吸い付いたので、へラは痛みと驚きで、その赤ん坊を引き剥がしました。 この時口からこぼれた母乳が飛び散り、天に飛んだものが天の川となり、地にこぼれたものが白百合になったのです。 そして、ヘラの母乳を飲んだ赤ん坊は、不死身の身体を手に入れ、ヘラクレス（ヘラの栄光）と呼ばれるようになりました。 輝くばかりに真っ白な百合は、古代ギリシャでは、貞節と結婚の女神ヘラの花とされました。このため、純潔と貞節を祈願して、結婚式では、この花を花嫁の頭に飾ったと言われています。</p>
-          </div>
+    <div id="narcissus">
+      <div class="inner"><img src="images/img04.jpg" width="480" height="320" alt="水仙"/>
+        <div class="text">
+          <h2>花言葉：自己愛、自惚れ、我欲</h2>
+          <p>美少年ナルキッソスの美しさは妖精達にも評判でした。そんな彼を、妖精エコーが見つけ、一目ぼれします。 しかしエコーはその思いを自ら伝える事ができません。女王ヘラから「相手が言った最後の一文しか喋れない」というバツを受けていたからです。エコーはナルキッソスに拒絶され、悲しみのあまり山奥にこもりますが、肉体は滅んでしまいます。今でも、彼女に呼びかけると、言葉を返すのです。 その後も、何人もの妖精が彼に告白しますが、ナルキッソスは、全て拒絶しました。その中の一人が「彼にも愛が報われない思いをさせたい」と復讐の女神に願います。復讐の女神は願いを聞き入れ、 ナルキッソスは水に映った自分の姿しか愛せなくなってしまいます。 何日も何日も水に映った自分の姿を見つめたまま、彼は衰弱死してしまいます。 しかしその亡骸はなく、代わりに水仙の花が咲いていたのです。 水仙の花がうなだれているのは、水に映った自分の姿を見ているからです。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content4" id="narcissus">
-        <div class="narcissus-narcissus">
-          <div class="m-inner-title2">
-            <h3>Narcissus</h3><h4>―水仙―</h4>
-            <p>花言葉：自己愛、自惚れ、我欲</p>
-          </div>
-          <div class="m-inner-text">
-            <p>美少年ナルキッソスの美しさは妖精達にも評判でした。そんな彼を、妖精エコーが見つけ、一目ぼれします。 しかしエコーはその思いを自ら伝える事ができません。 元々あまりにもおしゃべりだった為、女王ヘラから「相手が言った最後の一文しか喋れないというバツを受けていたからです。 思いを伝える事ができないまま、エコーはナルキッソスに拒絶され、悲しみのあまり山奥にこもりますが、肉体は滅んでしまいます。今でも、彼女に呼びかけると、言葉を返すのです。 その後も、何人もの妖精が彼に告白しますが、ナルキッソスは、全て拒絶しました。その中の一人が「彼にも愛が報われない思いをさせたい」と復讐の女神に願います。復讐の女神は願いを聞き入れ、 ナルキッソスは水に映った自分の姿しか愛せなくなってしまいます。 何日も何日も水に映った自分の姿を見つめたまま、彼は衰弱死してしまいます。 しかしその亡骸はなく、代わりに水仙の花が咲いていたのです。 水仙の花がうなだれているのは、水に映った自分の姿を見ているからです。</p>
-          </div>
+    <div id="hyacinth">
+      <div class="inner"><img src="images/img05.jpg" width="480" height="320" alt="ヒヤシンス"/>
+        <div class="text">
+          <h2>花言葉：悲しい恋、遊戯</h2>
+          <p>ヒヤシンスがどうやって生まれたのかを教えてくれるのは、ギリシャ神話のヒュアキントスの物語です。 美少年ヒュアキントスは、太陽神アポロンと西風の神ゼピュロスの二人から言い寄られていました。 ヒュアキントスは、太陽のように快活なアポロンが好きでした。 その仲の良さに嫉妬したゼピュロスは、ある日、二人が円盤投げをして遊んでいる時、アポロンが投げた円盤を、風の力で方向を変え、ヒュアキントスの額に当てて、彼を殺害したのです。 ヒュアキントスの死を悲しんだアポロンは、地面に広がったヒュアキントスの血から、花を咲かせたのです。 その花が、ヒヤシンスと呼ばれるようになりました。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content5" id="hyacinth">
-        <div class="hyacinth-hyacinth">
-          <div class="m-inner-title2">
-            <h3>Hyacinth</h3><h4>―ヒヤシンス―</h4>
-            <p>花言葉：悲しい恋、遊戯</p>
-          </div>
-          <div class="m-inner-text">
-            <p>ヒヤシンスがどうやって生まれたのかを教えてくれるのは、ギリシャ神話のヒュアキントスの物語です。 美少年ヒュアキントスは、太陽神アポロンと西風の神ゼピュロスの二人から言い寄られていました。 ヒュアキントスは、太陽のように快活なアポロンが好きでした。 その仲の良さに嫉妬したゼピュロスは、ある日、二人が円盤投げをして遊んでいる時、アポロンが投げた円盤を、風の力で方向を変え、ヒュアキントスの額に当てて、彼を殺害したのです。 ヒュアキントスの死を悲しんだアポロンは、地面に広がったヒュアキントスの血から、花を咲かせたのです。 その花が、ヒヤシンスと呼ばれるようになりました。</p>
-          </div>
+    <div id="violet">
+      <div class="inner"><img src="images/img06.jpg" width="480" height="320" alt="すみれ"/>
+        <div class="text">
+          <h2>花言葉：誠実、愛</h2>
+          <p>ギリシャの南東部、アルゴリス地方の女王イオ（Io）主神ゼウスの妻ヘラに仕える巫女で、イオはつぶらな瞳の美しい娘でしたから、当然ゼウスも行為を抱き神託を下して、関係を持ちました。 ヘラはゼウスの浮気で幾度も苦々しい思いをしていましたから、敏感になっていました。 すぐにイオとの関係に気づくと、二人が密会している現場を狙って、馬車を駆って天界から降りてきました。 ゼウスは急いでイオを牝牛に変えてごまかしました。 この時牧場には雑草しかなかったため、「自分が」愛した乙女に、そのような食事をさせるのは忍びないと、ゼウスはイオのつぶらな瞳を思いだし、香り高く柔らかなすみれを作り出したのです。 この為ギリシャ語では、すみれをイオン（Ion)と呼んでいます。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content6" id="violet">
-        <div class="violet-violet">
-          <div class="m-inner-title3">
-            <h3>Violet</h3><h4>―すみれ―</h4>
-            <p>花言葉・・誠実、愛</p>
-          </div>
-          <div class="m-inner-text">
-            <p>ギリシャの南東部、アルゴリス地方の女王イオ（Io）主神ゼウスの妻ヘラに仕える巫女で、イオはつぶらな瞳の美しい娘でしたから、当然ゼウスも行為を抱き神託を下して、関係を持ちました。 ヘラはゼウスの浮気で幾度も苦々しい思いをしていましたから、敏感になっていました。 すぐにイオとの関係に気づくと、二人が密会している現場を狙って、馬車を駆って天界から降りてきました。 ゼウスは急いでイオを牝牛に変えてごまかしました。 この時牧場には雑草しかなかったため、「自分が」愛した乙女に、そのような食事をさせるのは忍びないと、ゼウスはイオのつぶらな瞳を思いだし、香り高く柔らかなすみれを作り出したのです。 この為ギリシャ語では、すみれをイオン（Ion)と呼んでいます。</p>
-          </div>
+    <div id="column">
+      <div class="inner"><img src="images/img07.jpg" width="480" height="320" alt="蘭"/>
+        <div class="text">
+          <h2>花言葉：有能</h2>
+          <p>サテュロスは酒の神デュオニュソスに仕える、ヤギの角と足を持った山野の精です。このサテュロスに、オルキス（Orchis）という息子がいました。オルキスは父親に似て、酒を飲んでは女性を追いかけまわす困った若者です。 ある日、オルキスは酒に酔った勢いで、デュオニソスの女司祭を犯そうとしました。周囲の者達は、この無礼な行いを止めようと、オルキスに掴みかかり、バラバラにして殺してしまいました。 サテュロスは息子を助けてくれるよう、神々に願いましたが、日頃から素行が悪く厄介者だったオルキスを救おうという神はいませんでした。 とは言えバラバラはやりすぎだと、オルキスを奇妙な形の花・・蘭に変えたのです。花になってもオルキスの素行は直らなかったようで、蘭の根を食べると、淫乱で乱暴になるといいます。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content7" id="column">
-        <div class="column-column">
-          <div class="m-inner-title2">
-            <h3>Column</h3><h4>―蘭―</h4>
-            <p>花言葉・・・有能</p>
-          </div>
-          <div class="m-inner-text">
-            <p>サテュロスは酒の神デュオニュソスに仕える、ヤギの角と足を持った山野の精です。このサテュロスに、オルキス（Orchis）という息子がいました。オルキスは父親に似て、酒を飲んでは女性を追いかけまわす困った若者です。 ある日、オルキスは酒に酔った勢いで、デュオニソスの女司祭を犯そうとしました。周囲の者達は、この無礼な行いを止めようと、オルキスに掴みかかり、バラバラにして殺してしまいました。 サテュロスは息子を助けてくれるよう、神々に願いましたが、日頃から素行が悪く厄介者だったオルキスを救おうという神はいませんでした。 とは言えバラバラはやりすぎだと、オルキスを奇妙な形の花・・蘭に変えたのです。花になってもオルキスの素行は直らなかったようで、蘭の根を食べると、淫乱で乱暴になるといいます。</p>
-          </div>
+    <div id="pansy">
+      <div class="inner"><img src="images/img08.jpg" width="480" height="320" alt="パンジー"/>
+        <div class="text">
+          <h2>花言葉：思慮深い、物思い、貴方を思ってます</h2>
+          <p>恋の神クピド（Cupid）が、いたずらで、月の女神ディアナ（Diana）に恋の矢をいかけました。しかし、ディアナの威厳ある光によって、矢は逸れてしまい、西の国に生えていた白いすみれに当たりました。すみれは恋の矢で傷つき、花びらが紫色に染まってパンジーになったと言われています。シェイクスピアはこの伝説を元に、「夏の夜の夢」にパンジーを「紫色に染まったキューピッド（クピドの英語読み）の花」として登場させました。 この話では、恋の矢で紫色に染まったパンジーの花のエキスを眠っている女性の瞼にたらすと、目を開いて初めて見た男性に恋をするのです。この他にも、パンジーはクピドの顔を写した花である・・との言い伝えもあり、パンジーがクピドと深い関係にあるのは間違いなさそうです・・・。</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="content8" id="pansy">
-        <div class="pansy-pansy">
-          <div class="m-inner-title3">
-            <h3>Pansy</h3><h4>―パンジー―</h4>
-            <p>花言葉・・・思慮深い、物思い、貴方を思ってます</p>
-          </div>
-          <div class="m-inner-text">
-            <p>恋の神クピド（Cupid）が、いたずらで、月の女神ディアナ（Diana）に恋の矢をいかけました。しかし、ディアナの威厳ある光によって、矢は逸れてしまい、西の国の丘に生えていた白いすみれに当たりました。すみれは恋の矢で傷つき、花びらが紫色に染まってパンジーになったと言われています。シェイクスピアはこの伝説を元に、「夏の夜の夢」にパンジーを「紫色に染まったキューピッド（クピドの英語読み）の花」として登場させました。 この話では、恋の矢で紫色に染まったパンジーの花のエキスを眠っている女性の瞼にたらすと、目を開いて初めて見た男性に恋をするのです。妖精王オベローンはティターニアの心を得る為に、妖精パックにこの花を取ってくるよう命じるのです。この他にも、パンジーはクピドの顔を写した花である・・との言い伝えもあり、パンジーがクピドと深い関係にあるのは間違いなさそうです・・・。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-	</main>
-	<footer>
-		<p><small>© Flowershop Hyakka</small></p>
-	</footer>
+  </main>
+  <footer>
+    <p><small>© Flowershop Hyakka</small></p>
+    </footer>
+  <p class="pagetop"><a href="#all">TOP</a></p>
+</div>
 </body>
 </html>
