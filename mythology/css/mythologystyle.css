@@ -229,13 +229,6 @@ p {
 }
 
 @media screen and (min-width:1501px){
-.inner {
-
-}
-.inner .text {
-    height: auto;
-    width: 500px;
-}
 .inner p {
     margin-top: 10%;
     font-size: medium;
